@@ -1,0 +1,18 @@
+package com.copaair.connectmiles.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("VIEW")
+public class UpgradeCalculatorViewController {
+
+	public UpgradeCalculatorViewController() {
+		// TODO Auto-generated constructor stub
+	}
+	@RequestMapping
+	protected String defaultView() {
+		return "view";
+	}
+
+}

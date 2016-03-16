@@ -1,0 +1,5 @@
+package com.copaair.connectmiles.upgradecalculator.utils;
+
+public class ConfigurationActionImpl extends ConfigurationAction{
+
+}

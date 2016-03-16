@@ -1,0 +1,35 @@
+!SESSION 2016-03-16 11:15:21.942 -----------------------------------------------
+eclipse.buildId=2.2.2.201504240205-ga3
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product com.liferay.studio.product.ui.studio
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.liferay.studio.product.ui.studio
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2016-03-16 11:17:00.120
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2016-03-16 11:17:00.131
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.m2e.discovery 4 0 2016-03-16 12:46:40.046
+!MESSAGE No marketplace items are applicable.
+
+!ENTRY org.eclipse.m2e.discovery 4 0 2016-03-16 12:50:02.753
+!MESSAGE No marketplace items are applicable.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-03-16 13:13:12.602
+!MESSAGE Could not delete /home/camilo/Portal Liferay/liferay-portal-6.2-ee-sp14/tomcat-7.0.62/webapps/UpgradeCalculator-portlet/WEB-INF/lib. May be locked by another process.
+!SESSION 2016-03-16 13:30:07.566 -----------------------------------------------
+eclipse.buildId=2.2.2.201504240205-ga3
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product com.liferay.studio.product.ui.studio
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.liferay.studio.product.ui.studio
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2016-03-16 13:30:14.794
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2016-03-16 13:30:14.805
+!MESSAGE IvyDE plugin started

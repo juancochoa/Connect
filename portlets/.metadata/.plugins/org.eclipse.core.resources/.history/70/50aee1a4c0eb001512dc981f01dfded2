@@ -1,0 +1,6 @@
+package com.copaair.connectmiles.upgradecalculator.utils;
+import com.liferay.portal.kernel.portlet.DefaultConfigurationAction;
+
+public class ConfigurationActionImpl extends DefaultConfigurationAction{
+
+}

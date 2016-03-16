@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
+<stringAttribute key="M2_PROFILES" value="Liferay-v6.2-EE-(Tomcat-7),Liferay-v6.2-EE-(Tomcat-7)(1)"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/home/camilo/ConnectMiles-Frontend/portlets/UpgradeCalculator"/>
+</launchConfiguration>
