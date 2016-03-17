@@ -1,0 +1,33 @@
+package com.copaair.connectmiles.upgradecalculator.utils;
+import com.liferay.portal.kernel.portlet.DefaultConfigurationAction;
+import com.liferay.portal.kernel.util.GetterUtil;
+import com.liferay.portal.kernel.util.StringPool;
+
+import javax.portlet.PortletPreferences;
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+import javax.portlet.PortletConfig;
+
+public class ConfigurationActionImpl extends DefaultConfigurationAction{
+	@Override
+	public void processAction(
+	    PortletConfig portletConfig, ActionRequest actionRequest,
+	    ActionResponse actionResponse) throws Exception {  
+
+	    super.processAction(portletConfig, actionRequest, actionResponse);
+
+	    PortletPreferences prefs = actionRequest.getPreferences();
+
+	    String somePreferenceKey = (prefs).getValue(
+	        "nombre", "true");
+	    String nombre=GetterUtil.getString(prefs.getValue("nombre", StringPool.BLANK));
+
+	    System.out.println(somePreferenceKey);
+	    System.out.println("oe"+nombre);
+
+        prefs.setValue("nombre", nombre);
+ 
+        prefs.store();
+	    // Add any preference processing here.
+	}
+}

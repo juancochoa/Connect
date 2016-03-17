@@ -1,0 +1,28 @@
+<%@page session="false" contentType="text/html" pageEncoding="ISO-8859-1" import="java.util.*,javax.portlet.*" %>
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri="http://liferay.com/tld/util" prefix="liferay-util" %>
+<%@ page import="com.liferay.portal.kernel.util.StringPool" %>
+<%@ page import="com.liferay.portal.kernel.util.GetterUtil" %>
+<%@page import="com.liferay.portal.kernel.util.Validator"%>
+<%@page import="com.liferay.portlet.PortletPreferencesFactoryUtil"%>
+<%@page import="com.liferay.portal.kernel.util.ParamUtil"%>
+<portlet:defineObjects />
+ oeoe
+<h1>Hello World, Spring Portlet MVC way :-)</h1>
+<%  
+boolean showLocationAddress_view = GetterUtil.getBoolean(portletPreferences.getValue("nombre", ""));
+String nombre=GetterUtil.getString(portletPreferences.getValue("nombre", ""));
+%>
+
+<%
+PortletPreferences pref = renderRequest.getPreferences();
+
+String doller=pref.getValue("name","");
+System.out.println("Nirav ="+ doller);
+String name=pref.getValue("Doller", "");
+System.out.println("Doller ="+ name);
+%>
+<%=doller %>
+<%=showLocationAddress_view %>
+<%=nombre %>

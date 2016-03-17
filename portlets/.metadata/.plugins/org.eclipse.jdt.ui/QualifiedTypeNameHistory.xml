@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.GetterUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.StringPool"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.ParamUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.Validator"/>
+<fullyQualifiedTypeName name="com.liferay.portlet.PortletPreferencesFactoryUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.PortalException"/>
+<fullyQualifiedTypeName name="com.liferay.portal.SystemException"/>
+</qualifiedTypeNameHistroy>

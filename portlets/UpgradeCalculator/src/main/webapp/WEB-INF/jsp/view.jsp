@@ -4,10 +4,28 @@
 <%@ taglib uri="http://liferay.com/tld/util" prefix="liferay-util" %>
 <%@ page import="com.liferay.portal.kernel.util.StringPool" %>
 <%@ page import="com.liferay.portal.kernel.util.GetterUtil" %>
+<%@page import="com.liferay.portal.kernel.util.Validator"%>
+<%@page import="com.liferay.portlet.PortletPreferencesFactoryUtil"%>
+<%@page import="com.liferay.portal.kernel.util.ParamUtil"%>
 <portlet:defineObjects />
- 
+ oeoe
 <h1>Hello World, Spring Portlet MVC way :-)</h1>
 <%  
-boolean showLocationAddress_view = GetterUtil.getBoolean(portletPreferences.getValue("nombre", StringPool.BLANK));
+boolean showLocationAddress_view = GetterUtil.getBoolean(portletPreferences.getValue("nombre", ""));
+String nombre=GetterUtil.getString(portletPreferences.getValue("nombre", ""));
 %>
+
+<%
+PortletPreferences pref = renderRequest.getPreferences();
+String portletResource = ParamUtil.getString(request, "portletResource");
+if (Validator.isNotNull(portletResource)) {
+pref= PortletPreferencesFactoryUtil.getPortletSetup(request, portletResource);
+}
+String doller=pref.getValue("nombre","");
+System.out.println("Nirav ="+ doller);
+String name=pref.getValue("Doller", "");
+System.out.println("Doller ="+ name);
+%>
+<%=doller %>
 <%=showLocationAddress_view %>
+<%=nombre %>
